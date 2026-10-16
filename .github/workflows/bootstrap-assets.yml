@@ -1,0 +1,26 @@
+name: Bootstrap shared assets
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: JH0N-SN0W/h5-gaming-5
+          path: _src
+      - name: Copy MIT game catalog, icons and license files
+        run: |
+          set -euo pipefail
+          cp -r _src/icons ./icons
+          cp _src/games.json _src/LICENSE _src/NOTICE .
+          rm -rf _src
+          test "$(ls icons | wc -l)" -ge 100
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add shared MIT game catalog, icons, LICENSE and NOTICE"
+          git push

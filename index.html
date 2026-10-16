@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Altaigame Box — Free H5 Games</title>
+  <meta name="description" content="Altaigame Box: free mobile HTML5 games. Play hot, casual, shooting, race and puzzle games instantly in your browser.">
+  <meta name="theme-color" content="#38bdf8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338bdf8'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='34' fill='white'%3E▶%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#/" aria-label="Altaigame Box home">
+        <span class="brand-badge" aria-hidden="true">▶</span>
+        <span>Altaigame Box</span>
+      </a>
+      <nav class="nav-scroll" id="main-nav" aria-label="Categories">
+        <a class="nav-link active" href="#/" data-nav="home">Home</a>
+        <a class="nav-link" href="#/cat/Popular" data-nav="Popular">Popular</a>
+        <a class="nav-link" href="#/cat/Casual" data-nav="Casual">Casual</a>
+        <a class="nav-link" href="#/cat/Shooting" data-nav="Shooting">Shooting</a>
+        <a class="nav-link" href="#/cat/Race" data-nav="Race">Race</a>
+        <a class="nav-link" href="#/cat/Puzzle" data-nav="Puzzle">Puzzle</a>
+      </nav>
+      <div class="search-wrap">
+        <span class="search-ico" aria-hidden="true">🔍</span>
+        <input id="search" type="search" placeholder="Search" autocomplete="off" aria-label="Search games">
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="home-view">
+      <section class="banner" id="banner" aria-label="Featured games">
+        <div class="banner-track" id="banner-track"></div>
+        <div class="banner-dots" id="banner-dots"></div>
+      </section>
+
+      <div class="ad-slot banner-ad" role="complementary" aria-label="Advertisement">advertisement</div>
+
+      <nav class="quick-cats" aria-label="Quick categories">
+        <a class="qcat" href="#/cat/Popular"><span class="ico">🔥</span>Popular</a>
+        <a class="qcat" href="#/cat/Casual"><span class="ico">🎈</span>Casual</a>
+        <a class="qcat" href="#/cat/Shooting"><span class="ico">🎯</span>Shooting</a>
+        <a class="qcat" href="#/cat/Race"><span class="ico">🏎️</span>Race</a>
+        <a class="qcat" href="#/cat/Puzzle"><span class="ico">🧩</span>Puzzle</a>
+      </nav>
+
+      <section class="section" id="hot-section">
+        <div class="section-head">
+          <h3>Editor's Picks</h3>
+          <a href="#/cat/Popular">More</a>
+        </div>
+        <div class="game-grid" id="hot-grid"></div>
+      </section>
+
+      <div class="ad-slot" role="complementary" aria-label="Advertisement">advertisement</div>
+
+      <section class="section" id="latest-section">
+        <div class="section-head">
+          <h3>Latest Games</h3>
+          <a href="#/cat/Casual">More</a>
+        </div>
+        <div class="game-grid" id="latest-grid"></div>
+      </section>
+
+      <div class="ad-slot" role="complementary" aria-label="Advertisement">advertisement</div>
+
+      <section class="section" id="more-section">
+        <div class="section-head">
+          <h3>More to Play</h3>
+        </div>
+        <div class="game-grid" id="more-grid"></div>
+      </section>
+    </div>
+
+    <div id="list-view" class="hidden">
+      <section class="section">
+        <div class="section-head">
+          <h3 id="list-title">Games</h3>
+          <span id="list-count" style="color:var(--muted);font-size:12px"></span>
+        </div>
+        <div class="game-grid" id="list-grid"></div>
+        <p class="empty hidden" id="list-empty">No games matched your search.</p>
+      </section>
+    </div>
+
+    <div id="play-view" class="hidden play-page">
+      <div class="play-top">
+        <button type="button" class="back-btn" id="back-btn">← Back</button>
+        <strong id="play-title-mini" style="font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></strong>
+      </div>
+      <div class="play-frame-wrap">
+        <iframe id="play-frame" title="Game player" allow="fullscreen; gamepad; autoplay" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="play-detail">
+        <h1 id="play-title"></h1>
+        <p id="play-desc"></p>
+        <p class="g-meta" id="play-meta" style="margin-top:8px"></p>
+        <a class="btn btn-play btn-sm open-ext" id="open-ext" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+      <div class="ad-slot" role="complementary" aria-label="Advertisement">advertisement</div>
+    </div>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p><strong>Altaigame Box</strong> is a free HTML5 game portal. Games are embedded from open-source MIT-licensed collections for entertainment only.</p>
+    <p>We do not host user accounts or persist personal data on a server. Advertisement slots are placeholders and do not load third-party ad scripts yet.</p>
+    <p>Game content © respective authors · MIT · See <a href="NOTICE">NOTICE</a> · <a href="https://github.com/sausi-7/games" rel="noopener" target="_blank">Source collection</a></p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
