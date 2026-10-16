@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128" role="img" aria-label="Table Tennis">
+  <defs>
+    <linearGradient id="g-table-tennis" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#84cc16"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g-table-tennis)"/>
+  <g transform="translate(0,0)" opacity="0.92"><circle cx="32" cy="32" r="18" fill="#84cc16"/><path d="M32 14v36M14 32h36M20 20c8 6 16 6 24 0M20 44c8-6 16-6 24 0" stroke="#0f1220" stroke-width="1.8" fill="none" opacity="0.4"/></g>
+  <rect x="4" y="44" width="56" height="16" rx="6" fill="#0f1220" opacity="0.35"/>
+  <text x="32" y="56" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="800" fill="#ffffff">TT</text>
+</svg>
